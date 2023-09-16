@@ -30,6 +30,8 @@ TECHNICALLY the site doesn't have a LICENSE file so it's fine... */
     cursor: pointer;
     animation: SPIN 1s linear infinite;
     animation-play-state: paused;
+    border-radius: 100%;
+    border: 5px solid var(--friend-color);
 }
 
 #cenu:hover #cenu-icon, #cenu:hover #cenu-volume:after, #cenu:hover #cenu-links:after {
