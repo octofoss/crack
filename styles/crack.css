@@ -1,7 +1,14 @@
 :root {
     --text: white;
     --bg: black;
+
+    --dark-color: black;
+    --bright-color: white;
     --friend-color: #00ffff;
+    --obesk-color: #ff00ff;
+    --neutral-color: #ffff00;
+    --bastard-color: #ff0066;
+
     --baseTransform: translateX(0);
 }
 
@@ -110,10 +117,16 @@ body:not(#splash):not(.mothcontainer){
   vertical-align: 0.65rem;
 }
 
+.selectmenu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .button {
     display: inline-block;
     text-align: center;
-    font-family: barcodetext;
+    font-family: 'Libre Barcode 128 Text';
     font-size: 2em;
     color: var(--neutral-color);
     width: auto;
