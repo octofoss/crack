@@ -31,6 +31,10 @@ TECHNICALLY the site doesn't have a LICENSE file so it's fine... */
     animation-play-state: paused;
 }
 
+#cenu:hover #cenu-icon, #cenu:hover #cenu-volume:after, #cenu:hover #cenu-links:after {
+	animation-play-state: running;
+}
+
 body {   
   background-color: var(--bg);
   color: var(--text);
