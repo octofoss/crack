@@ -28,6 +28,8 @@ body:not(#splash):not(.mothcontainer){
   border: 1px solid #00ffff;
   position: relative;
   top: 25rem;
+  /* horrible thing to switch from rem to % in the same div but oh well */
+  left: 35%;
 }
 
 .mothcontainer .moth {
