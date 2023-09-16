@@ -41,19 +41,37 @@
             <p>corru radical automatic character kit</p>
         </div>
 
+        <!-- global menu, controls for project import/export + music volume
+            tbf i don't know why people would use the in-site music if they're here for a while
+            but idc it's MY SITE i get to DO WHAT I WANT -->
+        <div id="cenu">
+            <div id="cenu-icon"></div>
+        </div>
+
+        <!-- div7 mothbox. permanent; persistent across all pages (so it's not in content) -->
+        <div class="mothcontainer" role="figure" aria-label="moth dialogue box">
+            <div class="moth">
+                <div class="mimg"><img src="/img/blank.png"></div>
+                <div class="texts">
+                    <div class="barcode">
+                        <div class="penis"><span>!!__moth__!!</span></div>
+                    </div>
+                    <div class="mothmsg">hey buddy, not done here yet lol</div>
+                </div>
+            </div>
+        </div>
+
         <div id="content">
 
-            <!-- div7 mothbox -->
-            <div class="mothcontainer" role="figure" aria-label="moth dialogue box">
-                <div class="moth">
-                    <div class="mimg"><img src="/img/blank.png"></div>
-                    <div class="texts">
-                        <div class="barcode">
-                            <div class="penis"><span>!!__moth__!!</span></div>
-                        </div>
-                        <div class="mothmsg">hey buddy, not done here yet lol</div>
-                    </div>
-                </div>
+            <!-- base page, leads to other pages with da other stuff...
+            at the moment you can choose between making maps, entities, and combat
+            more eventually.. mayb -->
+
+            <div id="main-select" class="sys">
+                <h3>!!__SELECT_EDITOR__!!</h3>
+                <span id="map" class="button" onclick=mapLoad()>MAP</span>
+                <span id="entity" class="button" onclick=entityLoad()>ENTITY</span>
+                <span id="combat" class="button" onclick=mapLoad()>COMBAT</span>
             </div>
 
         </div>

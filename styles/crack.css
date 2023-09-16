@@ -26,6 +26,8 @@ body:not(#splash):not(.mothcontainer){
   width:500px;
   color: var(--friend-color);
   border: 1px solid #00ffff;
+  position: relative;
+  top: 25rem;
 }
 
 .mothcontainer .moth {
