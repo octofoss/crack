@@ -33,17 +33,20 @@ TECHNICALLY the site doesn't have a LICENSE file so it's fine... */
 /* img placeholder, plan to make something less Oblong later */
 #cenu-icon {
     background-image: url(../img/crack.png);
-    width: 96px;
-    height: 96px;
+    width: 50px;
+    height: 50px;
     cursor: pointer;
-    animation: SPIN 0.1s linear infinite;
+    animation: SPIN 1s linear infinite;
     animation-play-state: paused;
     border-radius: 100%;
     border: 1px dotted var(--friend-color);
+    opacity: 50%;
+    transition: 0.5s;
 }
 
-#cenu:hover #cenu-icon, #cenu:hover #cenu-volume:after, #cenu:hover #cenu-links:after {
+#cenu:hover #cenu-icon {
 	animation-play-state: running;
+    opacity: 1;
 }
 
 body {   
@@ -118,11 +121,11 @@ body:not(#splash):not(.mothcontainer){
 }
 
 .selectmenu {
-    display: flex;
     align-items: center;
     justify-content: center;
 }
 
+/* okay now this is LITERALLY just the observer button. soz */
 .button {
     display: inline-block;
     text-align: center;
