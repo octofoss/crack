@@ -10,6 +10,27 @@
     }
 }
 
+/* confession: most of these styling elements are direct modifications of observer sheets
+TECHNICALLY the site doesn't have a LICENSE file so it's fine... */
+#cenu {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 1vmin;
+    left: 1vmin;
+    z-index: 9999;
+}
+
+#cenu-icon {
+    background-image: url(img/crack.png);
+    width: 96px;
+    height: 96px;
+    cursor: pointer;
+    animation: SPIN 1s linear infinite;
+    animation-play-state: paused;
+}
+
 body {   
   background-color: var(--bg);
   color: var(--text);
@@ -97,4 +118,9 @@ body:not(#splash):not(.mothcontainer){
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+}
+
+@keyframes SPIN {
+    0% { transform: var(--baseTransform) rotate(0deg) }
+    100% { transform: var(--baseTransform) rotate(360deg) }
 }
