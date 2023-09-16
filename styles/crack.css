@@ -23,7 +23,7 @@ TECHNICALLY the site doesn't have a LICENSE file so it's fine... */
 }
 
 #cenu-icon {
-    background-image: url(img/crack.png);
+    background-image: url(../img/crack.png);
     width: 96px;
     height: 96px;
     cursor: pointer;
