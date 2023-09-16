@@ -23,15 +23,16 @@ TECHNICALLY the site doesn't have a LICENSE file so it's fine... */
     z-index: 9999;
 }
 
+/* img placeholder, plan to make something less Oblong later */
 #cenu-icon {
     background-image: url(../img/crack.png);
     width: 96px;
     height: 96px;
     cursor: pointer;
-    animation: SPIN 1s linear infinite;
+    animation: SPIN 0.1s linear infinite;
     animation-play-state: paused;
     border-radius: 100%;
-    border: 5px solid var(--friend-color);
+    border: 1px dotted var(--friend-color);
 }
 
 #cenu:hover #cenu-icon, #cenu:hover #cenu-volume:after, #cenu:hover #cenu-links:after {
@@ -107,6 +108,18 @@ body:not(#splash):not(.mothcontainer){
 .mothcontainer .texts .barcode .penis span {
   line-height: 0;
   vertical-align: 0.65rem;
+}
+
+.button {
+    display: inline-block;
+    text-align: center;
+    font-family: barcodetext;
+    font-size: 2em;
+    color: var(--neutral-color);
+    width: auto;
+    padding: 0.25em;
+    border: 1px solid;
+    cursor: pointer;
 }
 
 #splash {
