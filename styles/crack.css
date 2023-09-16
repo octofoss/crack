@@ -2,6 +2,7 @@
     --text: white;
     --bg: black;
     --friend-color: #00ffff;
+    --baseTransform: translateX(0);
 }
 
 @media only screen and (max-width: 1026px) {
