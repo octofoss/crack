@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CRACK</title>
 
-    <link rel="icon" type="image/png" href="/img/fav.png">
+    <link rel="icon" type="image/png" href="favicon.ico">
 
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&ampdisplay=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+128+Text&ampdisplay=swap" rel="stylesheet">
@@ -17,6 +17,7 @@
     <meta property="og:description" content="corru radical automatic character kit">
 
     <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+    <script src="https://unpkg.com/swup@3.1.1/dist/Swup.umd.js"></script>
     <script data-goatcounter="https://npm.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
     <script src="https://corru.observer/js/buddy_extern.js"></script>
     <script src="/js/crack.js"></script>
@@ -70,10 +71,28 @@
 
             <div id="main-select" class="sys selectmenu">
                 <h3>!!__SELECT_EDITOR__!!</h3>
-                <span id="map" class="button" onclick=mapLoad()>MAP</span>
-                <span id="entity" class="button" onclick=entityLoad()>ENTITY</span>
-                <span id="combat" class="button" onclick=mapLoad()>COMBAT</span>
+                <!-- for my own sake i use a switch case to load the page, since the data transfer is the same -->
+                <span id="graphic" class="button" onclick="load('graphic')" onmouseover="getInfo('moth', this.id)">GRAPHIC</span>
+                <span id="entity" class="button" onclick="load('entity')" onmouseover="getInfo('moth', this.id)">ENTITY</span>
+                <span id="dialogue" class="button" onclick="load('dialogue')" onmouseover="getInfo('moth', this.id)">DIALOGUE</span>
+                <span id="combat" class="button" onclick="load('combat')" onmouseover="getInfo('moth', this.id)">COMBAT</span>
+                <span id="map" class="button" onclick="load('map')" onmouseover="getInfo('moth', this.id)">MAP</span>
             </div>
+
+            <script id="PageData">
+                page = {
+                    name: 'index',
+                    path: location.pathname,
+
+                    onLoaded: () => {
+                        // empty
+                    },
+
+                    onLeaving: () => {
+                        // this is here so it doesn't break. will be used in later pages tho LOL
+                    }
+                }
+            </script>
 
         </div>
     </main>

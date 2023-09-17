@@ -65,10 +65,11 @@ body:not(#splash):not(.mothcontainer){
   width:500px;
   color: var(--friend-color);
   border: 1px solid #00ffff;
-  position: relative;
-  top: 25rem;
-  /* horrible thing to switch from rem to % in the same div but oh well */
-  left: 35%;
+  position: fixed;
+  left: 50%;
+  bottom: 20px;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
 }
 
 .mothcontainer .moth {
@@ -123,9 +124,12 @@ body:not(#splash):not(.mothcontainer){
 .selectmenu {
     align-items: center;
     justify-content: center;
+    border: 1px dotted white;
+    padding: 1rem;
+    padding-top: 0;
 }
 
-/* okay now this is LITERALLY just the observer button. soz */
+/* okay now this is LITERALLY just the observer button style. soz */
 .button {
     display: inline-block;
     text-align: center;
