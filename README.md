@@ -1,6 +1,6 @@
 # Corru Radical Automatic Character Kit
 A modification helper/builder for [corru.observer](https://corru.observer) with intuitive GUIs to help make every part of the process easier.
-- An alpha build version of this site can be found [here.](crack-118.pages.dev)
+- An alpha build version of this site can be found [here.](https://crack-118.pages.dev)
 
 ### Notice
 This repo has been made public after realizing this might never be an actual thing.
